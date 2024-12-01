@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Website with HubSpot Form</title>
+    <style>
+        /* Basic CSS for styling the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .form-container {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our Sample Website</h1>
+</header>
+
+<main>
+    <h2>About Us</h2>
+    <p>Welcome to our sample website. We're happy to provide you with useful information and an easy way to get in touch with us. If you have any questions, feel free to fill out the form below!</p>
+
+    <!-- Form Section -->
+    <div class="form-container">
+        <h3>Contact Us</h3>
+        <p>Please fill out the form below to reach us:</p>
+
+        <!-- HubSpot Form Embed -->
+        <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+    window.onload = function() {
+        hbspt.forms.create({
+            portalId: "48142375",  // Replace with your HubSpot portal ID
+            formId: "a7798890-9002-42e3-b9cd-a257624a0b6d"  // Replace with your HubSpot form ID
+        });
+    };
+</script>
+    </div>
+
+</main>
+
+<footer>
+    <p>&copy; 2024 Sample Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
